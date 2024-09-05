@@ -1,0 +1,6 @@
+- name: to push args into an inventory
+  hosts: localhost
+  tasks:
+    - name: to access from inventory
+      ansible.builtin.debug:
+        msg: "{{course}}---{{duration}}---{{trainer}}"
