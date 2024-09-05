@@ -1,0 +1,13 @@
+- name: read vars from prompt
+  hosts: localhost
+  vars_prompt:
+    - name: course
+      prompt: "please enter course::"
+    - name: duration
+      prompt: "please enter duration::"
+    - name: trainer
+      prompt: "please enter trainer::"
+  tasks:
+    - name: access vars from prompt
+      ansible.builtin.debug:
+        msg: "{{course}}---{{duration}}----{{trainer}}"
