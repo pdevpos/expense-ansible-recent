@@ -1,0 +1,8 @@
+- name: install nginx in another server
+  hosts: web
+  become: yes
+  tasks:
+   - name: Remove the nginx package
+     ansible.builtin.package:
+       name: nginx
+       state: absent
