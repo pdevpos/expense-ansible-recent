@@ -1,0 +1,10 @@
+- name: install nginx in another server
+  hosts: web
+  vars:
+    ansible_package_use: dnf
+  become: yes
+  tasks:
+    - name: install nginx
+      ansible.builtin.package:
+        name: nginx
+        state: present
