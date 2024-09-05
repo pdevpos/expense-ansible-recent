@@ -5,4 +5,4 @@
   tasks:
     - name: display variables
       ansible.builtin.debug:
-        msg: "{{course}} ---{{dureation}}---{{trainer}}"
+        msg: "{{course}} ---{{duration}}---{{trainer}}"
