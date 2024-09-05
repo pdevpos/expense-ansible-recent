@@ -10,10 +10,10 @@
 
   tasks:
     - name: task level variables #2
-      vars:
-        course: "angular"
+#      vars:
+#        course: "angular"
       ansible.builtin.debug:
         msg: "{{course}}"
 
 #1.cmd line args
-#2.
+#2.tasks level
