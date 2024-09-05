@@ -9,11 +9,11 @@
       prompt: "Please enter course"
 
   tasks:
-    - name: play level variables
-      ansible.builtin.debug:
-        msg: "{{ course }}"
     - name: task level variables #2
       vars:
         course: "angular"
       ansible.builtin.debug:
         msg: "{{course}}"
+
+#1.cmd line args
+#2.
