@@ -1,9 +1,9 @@
 - name: prioritize variables
   hosts: localhost
-#  vars:
-#    course: "devops" #3
-  vars_files:
-  - vars.yml #4
+  vars:
+    course: "devops" #3
+#  vars_files:
+#  - vars.yml #4
   vars_prompt:
     - name: course
       prompt: "Please enter course"
