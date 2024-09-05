@@ -4,5 +4,7 @@
     gname: "pavani"
   tasks:
     - name: display variables
+      vars:
+        gname: "naidu"
       ansible.builtin.debug:
         msg: "{{ gname }}"
