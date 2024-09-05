@@ -1,7 +1,7 @@
 - name: prioritize variables
   hosts: localhost
-  vars:
-    course: "devops" #3
+#  vars:
+#    course: "devops" #3
   vars_files:
   - vars.yml #4
   vars_prompt:
@@ -17,3 +17,4 @@
 
 #1.cmd line args
 #2.tasks level
+#files
