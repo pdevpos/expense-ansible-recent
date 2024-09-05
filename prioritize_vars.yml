@@ -1,9 +1,9 @@
 - name: prioritize variables
   hosts: localhost
-#  vars:
-#    course: "devops"
-#  vars_files:
-#  - vars.yml
+  vars:
+    course: "devops" #3
+  vars_files:
+  - vars.yml #4
   vars_prompt:
     - name: course
       prompt: "Please enter course"
@@ -12,8 +12,8 @@
     - name: play level variables
       ansible.builtin.debug:
         msg: "{{ course }}"
-#    - name: task level variables
-#      vars:
-#        course: "angular"
-#      ansible.builtin.debug:
-#        msg: "{{course}}"
+    - name: task level variables #2
+      vars:
+        course: "angular"
+      ansible.builtin.debug:
+        msg: "{{course}}"
